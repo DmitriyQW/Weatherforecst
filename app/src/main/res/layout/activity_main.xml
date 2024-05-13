@@ -9,62 +9,100 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_selected_city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Погода в Ростов на дону"
+        android:text="@string/selected_city"
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.117" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView_temperature"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="Температура по C : . "
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Дата прогноза :"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        android:layout_marginTop="16dp"
+        android:text="@string/temperature_day"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_months"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/textView_months"
+        app:layout_constraintTop_toBottomOf="@+id/textView_months" />
+
+    <TextView
+        android:id="@+id/textView_dayWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/dayWeek"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_selected_city"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_selected_city"
+        app:layout_constraintTop_toBottomOf="@+id/textView_selected_city" />
+
+    <Button
+        android:id="@+id/button_discover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="480dp"
+        android:backgroundTint="#FFCE54"
+        android:text="Вперёд"
+        android:textColorLink="#3EFF59"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="528dp"
-        android:backgroundTint="#FFCE54"
-        android:text="Узнать"
-        android:textColorLink="#3EFF59"
+        android:layout_marginTop="480dp"
+        android:text="Назад"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_nightTemperatur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/night_temperatur"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_temperature"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_temperature"
+        app:layout_constraintTop_toBottomOf="@+id/textView_temperature" />
+
+    <TextView
+        android:id="@+id/textView_months"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/month"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_numbersMonths"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_numbersMonths"
+        app:layout_constraintTop_toBottomOf="@+id/textView_numbersMonths" />
+
+    <TextView
+        android:id="@+id/textView_numbersMonths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/numbers_months"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_dayWeek"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView_dayWeek"
+        app:layout_constraintTop_toBottomOf="@+id/textView_dayWeek" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
