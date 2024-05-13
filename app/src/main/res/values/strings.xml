@@ -6,4 +6,6 @@
     <string name="month">Month : </string>
     <string name="temperature_day">Daytime temperature : </string>
     <string name="night_temperatur">Temperature at night : </string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
 </resources>

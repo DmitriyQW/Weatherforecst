@@ -1,11 +1,13 @@
 package com.weatherforecst.lernkotlin
 
 class Forecast {
-    private  var dayWeek:String
-    private  var numbersMonths:Int
-    private  var months:String
-    private  var temperatures:String
-    private  var nightTemperaturs:String
+    public  var dayWeek:String
+    public  var numbersMonths:Int
+    public  var months:String
+    public  var temperatures:String
+    public  var nightTemperaturs:String
+
+
 
     constructor(
         dayWeek: String,
